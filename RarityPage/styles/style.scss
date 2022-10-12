@@ -1,0 +1,199 @@
+html{
+    box-sizing: border-box;
+}
+
+body{
+    height: 100%;
+    width: 100%;
+    background-color: #6E3434;
+}
+@font-face {
+    font-family: "CustomFont";
+    src: url("../fonts/JmhcthulhumbusarcadeugRegular.ttf");
+}
+@font-face {
+    font-family: "CustomFont2";
+    src: url("../fonts/LoSumires.ttf");
+}
+
+
+
+.main {
+    width: 100%;
+    padding: 0.2em;
+    height: 100%;
+    &__title {
+        font-family: CustomFont2;
+        font-size: calc(6vw + (10vw / 1920));
+        font-weight: 500;
+        margin-bottom: 5%;
+        height: 15%;
+        display: flex;
+        color: #dca274;
+        justify-content: space-between;
+        flex-direction: column;
+        align-items: center;
+        @media (min-width:480px) {
+            font-size: 30px;
+            margin-bottom: 20px;
+        }
+    }
+    &__wrapper {
+        flex-wrap: wrap;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+    }
+    @media (min-width:480px) {
+        &__wrapper{
+            flex-direction: row;
+        }
+    }
+}
+.back-icon{
+    display: none;
+    width: 22%;
+    margin-left: 3%;
+    img{
+        width: 40px;
+        height: 40px;
+    }
+    @media (max-width:640px) {
+        display: block;
+        
+    }
+}
+.back-btn {
+    font-size: calc(2vw + (10vw / 1920));
+    left: 0px;
+    margin-left: 3%;
+    width: 22%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    font-family: CustomFont;
+    color: #FFE199;
+    @media (max-width:640px) {
+        display: none;
+    }
+}
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 22%;
+}
+.socials {
+    display: flex;
+    margin-right: 3%;
+    width: 22%;
+    justify-content: flex-end;
+    align-items: center;
+    @media (max-width:640px) {
+        transform: scale(0.8);
+    }
+}
+.twitter{
+    padding-right: 50px;
+    @media (max-width:640px) {
+        padding-right: 18px;
+    }
+}
+.Lendarios{
+    background: linear-gradient(360deg, #C76318 0%, #FAD9BD 100%);
+    border-radius: 7px;
+    padding: 6px;
+    color: #90421b;
+    
+    box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.25);
+    font-weight: 300;
+}
+.Mythics{
+    background: linear-gradient(360deg, #F1697A 0%, #FED7DF 100%);
+    border-radius: 7px;
+    padding: 6px;
+    color: #AD3B43;
+    
+    box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.25);
+    font-weight: 300;
+}
+.Epic{
+    background: linear-gradient(360deg, #8128C4 0%, #F9E8FF 100%);
+    border-radius: 7px;
+    padding: 6px;
+    color: #8119CA;
+    
+    box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.25);
+    font-weight: 300;
+}
+.Rares{
+    background: linear-gradient(360deg, #18A4FA 0%, #B8DBF6 100%);
+    border-radius: 7px;
+    padding: 6px;
+    color: #137BE9;
+    
+    box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.25);
+    font-weight: 300;
+}
+.Uncommons{
+    background: linear-gradient(360deg, #4CBA8C 0%, #BEFBE7 100%);
+    border-radius: 7px;
+    padding: 6px;
+    color: #38966A;
+    
+    box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.25);
+    font-weight: 300;
+}
+.Commons{
+    background: linear-gradient(360deg, #919193 0%, #EEEFF1 100%);
+    border-radius: 7px;
+    padding: 6px;
+    color: #717173;
+    
+    box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.25);
+    font-weight: 300;
+}
+.header {
+    height: 80px;
+    width: 100%;
+    background-color: #894D4D;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.parent {
+    border-radius: 30px;
+    overflow: hidden;
+    img{
+        width: 100%;
+        background-image: url(data:image/gif;base64,R0lGODlhCgAIAIABAN3d3f///yH5BAEAAAEALAAAAAAKAAgAAAINjAOnyJv2oJOrVXrzKQA7)
+    }
+    @media (min-width:480px) {
+        img{
+            height: 400px;
+            width: 100%;
+            
+        }
+    }
+}
+.lazy {
+}
+.main__image-card{
+    background-color: #814545;
+    height: calc(120vw + (100vw / 100));
+    padding: 20px;
+    margin: 0.5em;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
+    @media (min-width:480px) {
+        height: 560px
+    }
+}
